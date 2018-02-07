@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<TITLE>텍스트 입력 양식 만들기 예제</TITLE>
+</head>
+
+<body>
+<form name="fileupload" method="post"
+	enctype="multipart/form=data">
+
+	<p>아 이 디 : <INPUT type="text" name="ID" size="20" value=""></p>
+	<p>비밀번호 : <INPUT type="password" name="pswd" size="20" value=""></p>
+<BR>
+	<INPUT type="hidden" name="name" value="hkw">
+<BR>
+	<p><HR></p>
+	<INPUT type="radio" name="gender" value="man" checked>남자&nbsp;
+	<INPUT type="radio" name="gender" value="woman">여자&nbsp;
+<BR>
+	<p><HR></p>
+	<p>가장 좋아하는 색상은 어떤 것입니까?</p>
+	<INPUT type="checkbox" name="color" value="red">빨간색
+	&nbsp
+	<INPUT type="checkbox" name="color" value="blue">파란색
+	&nbsp
+	<INPUT type="checkbox" name="color" value="black">검은색
+	&nbsp
+	<INPUT type="checkbox" name="color" value="pink">핑크색
+	&nbsp
+	<INPUT type="checkbox" name="color" value="yellow">노란색
+<BR>
+	<p><HR></p>
+	<p>가장 좋아하는 색상은 어떤 것입니까?</p>
+	<SELECT name="color">
+		<OPTION value="red">빨간색</OPTION>
+		<OPTION value="blue">파란색</OPTION>
+		<OPTION value="white">흰색</OPTION>
+		<OPTION value="black">검은색</OPTION>
+		<OPTION value="gray" selected>회색</OPTION>
+	</SELECT>
+<BR>
+	<p><HR></p>
+	<p>가장 좋아하는 색상은 어떤 것입니까? (multi)</p>
+	<SELECT name="color_1" size="4" multiple>
+		<OPTION value="red">빨간색</OPTION>
+		<OPTION value="blue" selected>파란색</OPTION>
+		<OPTION value="white">흰색</OPTION>
+		<OPTION value="black">검은색</OPTION>
+		<OPTION value="gray">회색</OPTION>
+	</SELECT>
+<BR>
+	<p><HR></p>
+	<p>value 값을 지정하지 않은 경우의 전송/취소 기본 버튼</p>
+	<INPUT type = "submit" name = "submit">&nbsp;&nbsp;
+	<INPUT type = "reset" name = "reset">
+	<p><HR></p>
+	<p>value 값을 지정한 경우의 전송/취소 기본 버튼</p>
+	<INPUT type = "submit" name = "submit" value="전송">&nbsp;&nbsp;
+	<INPUT type = "reset" name = "reset" value="취소">
+<BR>
+	<p><HR></p>
+	<p>이전글/다음글 이동할 경우에는 아래의 버튼을 클릭해 주세요.</p>
+	<INPUT type = "button" name = "prv" >&nbsp;&nbsp;
+	<INPUT type = "button" name = "next" >
+<BR>
+	<p><HR></p>
+	<p>이전글/다음글 이동할 경우에는 아래의 버튼을 클릭해 주세요.</p>
+	<INPUT type = "image" name = "prv" src="bt_back.gif"
+		align="middle">&nbsp;&nbsp;
+	<INPUT type = "button" name = "next" src="bt_forward.gif"
+		align="middle" >
+<BR>
+	<p><HR></p>
+	<p>전송할 파일을 선택해 주세요.</p>
+	<INPUT type="file" name="files" size="30">
+<BR>
+	<p><HR></p>
+	<p>자기소개서</p>
+	<TEXTAREA name="content" rows="5" cols="50">
+	간략하게 자기 자신을 소개해 주세요.
+	</TEXTAREA>
+</form>
+</body>
+</html>

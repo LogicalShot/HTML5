@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>테스트</title>
+</head>
+
+<body>
+	<TABLE border="1" align="center" width="1000" height="500">
+		<TR>
+			<TD bgcolor="gray" width="300" height="150" align="center" valign="middle">예약메뉴</TD>
+			<TD width="700" height="150" align="left" valign="middle">
+				<form>
+					<SELECT name="SelectMenu">
+						<OPTION value="">선택</OPTION>
+						<OPTION value="Bibim">비빔밥</OPTION>
+						<OPTION value="Noodle">잔치국수</OPTION>
+						<OPTION value="Beef">불고기백반</OPTION>
+						<OPTION value="Dupbab">오징어덮밥</OPTION>
+					</SELECT>
+						&nbsp;
+					<INPUT type="checkbox" name="Ect" value="AfterChoice">방문후 결정
+				</form>
+			</TD>
+		</TR>
+		
+		
+		<TR>
+			<TD bgcolor="gray" width="300" height="350" align="center" valign="middle">요구사항</TD>
+			<TD>
+				<form>
+					<p>예약 요구사항을 입력하세요.</p>
+					<TEXTAREA name="Need" rows="20" cols="100">
+					</TEXTAREA>
+				</form>
+			</TD>
+		</TR>
+	</TABLE>
+<BR>
+		
+		<IMG src="welcome.jpg" width="400" height="45" border="0"
+				alt="회원가입Test" usemap="#ImageMap">
+		<MAP name="ImageMap">
+		<AREA shape="rect" coords="0,45,200,0"
+			href="http://www.daeguoracle.com/" alt="예담직업전문학교" target="_blank">
+		<AREA shape="rect" coords="200,45,400,0"
+			href="http://www.daeguoracle.com/" alt="예담직업전문학교" target="_self">
+		</MAP>
+<BR>
+	<TABLE border="1" align="center" width="1000" height="450">
+
+		<TR height="50">
+			<TD bgcolor="gray" width="300" colspan="2">성명&nbsp;*</TD>
+			<TD>
+				<form>
+					<INPUT type="text" name="Name" size="20" value="">
+				</form>
+			</TD>
+		</TR>
+		
+		<TR height="100">
+			<TD bgcolor="gray" colspan="2">주소&nbsp;*</TD>
+			<TD>
+				<form>
+					<INPUT type="text" name="Name" size="100" value="">
+					<p><INPUT type="text" name="Name" size="100" value=""></p>
+				</form>
+			</TD>
+		</TR>
+		
+		<TR height="100">
+			<TD bgcolor="gray" width="150" rowspan="2">
+				택1&nbsp;*
+			</TD>
+			<TD bgcolor="pink" width="150" height="50">전화번호</TD>
+			<TD width="700" height="50">
+				<form>
+					<SELECT name="LocalCall">
+						<OPTION value="Daegu" selected>053</OPTION>
+						<OPTION value="Daegeon">042</OPTION>
+						<OPTION value="Seoul">02</OPTION>
+					</SELECT>
+					-
+					<INPUT type="text" name="Name" size="5" value="">
+					-
+					<INPUT type="text" name="Name" size="5" value="">
+				</form>
+			</TD>
+		</TR>
+		
+		<TR>
+			<TD bgcolor="pink" width="150">휴대폰번호</TD>
+			<TD width="700" height="50">
+				<form>
+					<SELECT name="PhoneCall">
+						<OPTION value="Basic" selected>010</OPTION>
+						<OPTION value="Other1">011</OPTION>
+					</SELECT>
+					-
+					<INPUT type="text" name="Name" size="5" value="">
+					-
+					<INPUT type="text" name="Name" size="5" value="">
+				</form>
+			</TD>
+		</TR>
+		
+		<TR>
+			<TD bgcolor="gray" width="300" colspan="2">이메일(e-mail)&nbsp;*</TD>
+			<TD width="700" height="100">
+				<form>
+					<INPUT type="text" name="Name" size="15" value="">
+					@
+					<INPUT type="text" name="Name" size="15" value="">
+					<SELECT name="Email">
+						<OPTION value="" selected>직접입력</OPTION>
+						<OPTION value="Naver">naver.com</OPTION>
+						<OPTION value="Google">google.com</OPTION>
+					</SELECT>
+					<p>*&nbsp;Gmail,&nbsp;yahoo&nbsp;등에서&nbsp;제공하는&nbsp;메일계정을&nbsp;사용하시는&nbsp;경우&nbsp;해당사의&nbsp;보안정책&nbsp;등에&nbsp;의하여&nbsp;HRD-<BR>
+					NET의&nbsp;메일&nbsp;관련서비스&nbsp;이용시&nbsp;정상적으로&nbsp;수신되지&nbsp;않을&nbsp;수도&nbsp;있사오니&nbsp;다른&nbsp;메일계정을&nbsp;사용하여&nbsp;
+					주시기&nbsp;바랍니다.</p>
+				</form>
+			</TD>
+		</TR>
+
+		<TR>
+			<TD bgcolor="gray" width="300" height="100" colspan="2">이메일&middot;문자 수신 동의(선택)</TD>
+			<TD width="700" height="100">
+				<form>
+					<TEXTAREA rows="3" cols="100" style="resize:none">한국고용정보원은 회원 및 구직자를 대상으로 고용노동부에서 제공하는 소식 등 이메일 및 문자 서비스를 제공하고 있습니다.
+					</TEXTAREA>
+					<p align="right">
+					<INPUT type="checkbox" name="Agree" value="Agree" checked>이메일&middot;문자&nbsp;수신&nbsp;동의에&nbsp;동의합니다.
+ 					</p>
+				</form>
+		</TR>
+	</TABLE>
+</body>
+</html>
