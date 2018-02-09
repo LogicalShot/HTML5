@@ -1,0 +1,61 @@
+<!DOCTYPE>
+<html>
+<head>
+	<TITLE>exec4</TITLE>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend><h1>개인 정보 입력</h1></legend>
+			<p><LABEL for="id">아이디: </LABEL><input type="text" name="id" id="id">
+			<input type="submit" value="ID중복검사">
+			</p>
+			<p><LABEL for="birth">생년월일: </label><input type="date" name="birth" id=birth></p>
+			<p>
+				성별: <INPUT type="radio" name="gender" value="man" id="man" checked>
+				<LABEL for="man">남자</LABEL>&nbsp;
+				<INPUT type="radio" name="gender" value="woman" id="woman">
+				<LABEL for="woman">여자</LABEL>
+			</p>
+			<p>E-mail: <input type="email" name="myemail"></p>
+			<p>
+				메일수신: <INPUT type="radio" name="recieve" value="Agree" id="A" checked>
+				<LABEL for="A">수신동의</LABEL>&nbsp;
+				<INPUT type="radio" name="recieve" value="NotAgree" id="NA">
+				<LABEL for="NA">수신거부</LABEL>
+			</p>
+			<p>
+			핸드폰: <SELECT name="PhoneCall">
+				<OPTION value="Basic" selected>010</OPTION>
+				<OPTION value="Other1">011</OPTION>
+			</SELECT>
+				-
+				<INPUT type="text" name="Name" size="25" value="">
+				-
+				<INPUT type="text" name="Name" size="25" value="">
+			</SELECT>
+			</p>
+			<p>
+			직업: <SELECT name="Job">
+				<OPTION value="Student" selected>학생</OPTION>
+				<OPTION value="Free">무직</OPTION>
+			</SELECT>
+			</p>
+			<p>
+			취미: <INPUT type="checkbox" name="Hobby" value="Shopping">쇼핑
+			<INPUT type="checkbox" name="Hobby" value="Internet">인터넷
+			<INPUT type="checkbox" name="Hobby" value="Music">음악감상
+			<INPUT type="checkbox" name="Hobby" value="Book">독서
+			<INPUT type="checkbox" name="Hobby" value="Sport">스포츠
+			</p>
+			<p>
+			자기소개: <TEXTAREA name="Need" rows="8" cols="100">
+					</TEXTAREA>
+			</p>
+		</fieldset>
+			<p/>
+			<input type="submit" value="등록">
+			<input type="reset" value="초기화">
+	</form>
+</body>
+</html>
