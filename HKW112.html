@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Function 객체의 속성과 메소드</title>
+	<h2>FUnction 객체의 속성과 메소드 익히기</h2>
+</head>
+<body>
+	<script language="javascript"> //Function 객체 sum과 mul의 생성
+		sum = new Function("x", "y", "return x+y");
+		mul = new Function("x", "y", "return x*y");
+		
+		//Function 객체 sum과 mul에서 공통으로 사용할 변수 tmep1을 생성하고
+		//초기 값을 0으로 할당한다.
+		Function.prototype.temp1 = 0;
+
+		return_sum = sum(100, 20); //sum 함수의 호출
+		return_mul = mul(100, 20); //mul 함수의 호출
+		
+		document.write("sum(100, 20) : " + return_sum + "<br>");
+		document.write("mul(100, 20) : " + return_mul + "<br>");
+		document.write("sum.temp1 : " + sum.temp1 + "<br>");
+		document.write("mul.temp1 : " + mul.temp1 + "<br>");
+
+		document.write("sum.toString() : " + sum.toString() + "<br>");
+		document.write("mul.toString() : " + mul.toString() + "<br>");
+	</script>
+</body>
+</html>
+		
