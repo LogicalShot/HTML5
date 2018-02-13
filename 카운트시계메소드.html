@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>윈도우 객체의 메소드</title>
+	<h2>setTimeout, clearTimeout메소드 익히기</h2><br>
+	<script language="javascript">
+		var time_id;
+		function start_time() {
+			var today;
+			var str1, str2, str3;
+			today = new Date();	//Date 객체 today를 생성
+			str1 = today.getHours() + "시";
+			str2 = today.getMinutes() + "분";
+			str3 = today.getSeconds() + "초";
+			form1.text1.value = str1 + str2 + str3;
+			//밀리초(1/1000)단위로 타이머를 설정: 2000x(1/1000) = 2(초)
+			//2초후에 start_time을 1번만 호출
+			time_id = setTimeout("start_time()", 2000);
+		}
+		function stop_time() {
+			clearTimeout(time_id);//타이머를 해제시킴
+		}
+	</script>
+</head>
+<body>
+	<form name="form1"> 현재시간 :
+		<input type="text" name="text1" size=20> <p>
+
+		<input type="button" value="시계동작시작" onClick="start_time()")>
+		<input type="button" value="시계동작중지" onClick="stop_time()")>
+	</form>
+</body>
+</html>
+			
+		

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>window.event 객체 익히기</title>
+	<h2>익스플로러의 window.event 객체 익히기</h2><br>
+	<script language="javascript">
+		function MDE() {
+			document.write("발생된 이벤트 Type : " + window.event.type + "<br>");
+			if(window.event.button == 0)
+				{
+				 document.write("왼쪽 버튼이 클릭되었습니다.<br>");
+				}
+			else if(window.event.button == 2)
+				{
+				 document.write("오른쪽 버튼이 클릭되었습니다.<br>");
+				}
+			else if(window.event.button == 1)
+				{
+				 document.write("가운데 버튼이 클릭되었습니다.<br>");
+				}
+
+			document.write("전체화면을 기준으로 한 마우스 커서의 위치 : ");
+			document.write("(" + window.event.screenX + " ,");
+			document.write(window.event.screenY + ")<br>");
+			window.event.returnValue = true;
+		}
+	</script>
+</head>
+<body>
+	<script language="javascript">
+		document.onmousedown = MDE;
+	</script>
+</body>
+</html>
+			
+		
